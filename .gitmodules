@@ -1,0 +1,21 @@
+[submodule "additional_resources/previous_exploits_github_projects/CVE-2023-21716-POC"]
+	path = additional_resources/previous_exploits_github_projects/CVE-2023-21716-POC
+	url = https://github.com/RonF98/CVE-2023-21716-POC
+[submodule "additional_resources/previous_exploits_github_projects/CVE-2023-21742"]
+	path = additional_resources/previous_exploits_github_projects/CVE-2023-21742
+	url = https://github.com/ohnonoyesyes/CVE-2023-21742
+[submodule "additional_resources/previous_exploits_github_projects/CVE-2023-24955-PoC"]
+	path = additional_resources/previous_exploits_github_projects/CVE-2023-24955-PoC
+	url = https://github.com/former-farmer/CVE-2023-24955-PoC
+[submodule "additional_resources/previous_exploits_github_projects/CVE-2023-29357"]
+	path = additional_resources/previous_exploits_github_projects/CVE-2023-29357
+	url = https://github.com/Chocapikk/CVE-2023-29357
+[submodule "additional_resources/previous_exploits_github_projects/CVE-2024-30043-XXE"]
+	path = additional_resources/previous_exploits_github_projects/CVE-2024-30043-XXE
+	url = https://github.com/W01fh4cker/CVE-2024-30043-XXE
+[submodule "additional_resources/previous_exploits_github_projects/desharialize"]
+	path = additional_resources/previous_exploits_github_projects/desharialize
+	url = https://github.com/Voulnet/desharialize
+[submodule "additional_resources/previous_exploits_github_projects/writeups-about-analysis-CVEs-and-Exploits-on-the-Windows"]
+	path = additional_resources/previous_exploits_github_projects/writeups-about-analysis-CVEs-and-Exploits-on-the-Windows
+	url = https://github.com/Creamy-Chicken-Soup/writeups-about-analysis-CVEs-and-Exploits-on-the-Windows

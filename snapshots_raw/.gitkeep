@@ -1,0 +1,2 @@
+# This file ensures the snapshots_raw directory is tracked by git
+# Actual snapshot contents are excluded via .gitignore

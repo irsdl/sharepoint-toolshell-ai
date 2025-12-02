@@ -1,0 +1,19 @@
+July 10, 2025
+@_l0gg
+ (Khoa Dinh, Viettel Cyber Security)
+Announces Microsoft's Patch Tuesday release for the Pwn2Own SharePoint chain, urges patching, and coins "ToolShell" based on the ToolPane endpoint. Links to ZDI advisory with initial details.
+Exploit requires only one HTTP request for unauth RCE; references ZDI-25-580 for chain overview (deserialization + auth bypass). No code shared.
+Post Link  
+@_l0gg
+
+ 
+July 14, 2025
+@codewhitesec
+ (CODE WHITE GmbH)
+Shares reproduction of the ToolShell chain from Pwn2Own, crediting @mwulftange
+. Describes it as a single-request unauth exploit.
+Confirms chain viability: CVE-2025-49706 (auth spoofing) + CVE-2025-49704 (deserialization RCE) via POST to ToolPane.aspx. Includes image of exploit output (e.g., command execution proof). No code, but implies internal PoC for red teaming.
+Post Link  
+@codewhitesec
+Media: Screenshot showing successful RCE (e.g., "whoami" output on SharePoint server).
+

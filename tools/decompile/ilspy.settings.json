@@ -1,0 +1,18 @@
+{
+  "language": "CSharp",
+  "decompileAsyncMethods": true,
+  "useDebugSymbols": false,
+  "removeDeadCode": true,
+  "useExpressionTrees": true,
+  "anonymousMethods": "lambda",
+  "automaticProperties": true,
+  "useVarInForEach": true,
+  "useVarWhenEvident": true,
+  "expandMemberDefinitions": false,
+  "showXmlDocumentation": false,
+  "fullyQualifyAmbiguousTypeNames": false,
+  "oneFilePerType": false,
+  "useSdkStyleProjectFormat": true,
+  "collapseSwitchSections": true,
+  "useNativeIntegerTypes": true
+}

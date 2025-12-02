@@ -1,0 +1,94 @@
+# Diff Noise Filter Rules
+# ======================
+# This file contains regex patterns for filtering non-security-related noise from diff files
+# Each line starting with '#' is a comment
+# Empty lines are ignored
+# All other lines are treated as regex patterns
+#
+# Pattern syntax: PowerShell regex (case-sensitive by default)
+# Lines are matched against diff patch lines (which may start with +, -, or space)
+#
+# IMPORTANT: Only add patterns that filter out NON-SECURITY-RELATED changes
+# Do NOT filter patterns that could indicate security vulnerabilities or actual code changes
+#
+# Last updated: 2025-11-08
+
+# ============================================================
+# Decompiler-Generated Metadata (NOT security-related)
+# ============================================================
+
+# Decompiled timestamp comments: "// Decompiled: YYYY-MM-DD HH:MM:SS"
+^\+?-?\s*//\s*Decompiled:\s*\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}
+
+# ============================================================
+# Assembly Version Attributes (NOT security-related)
+# ============================================================
+
+# AssemblyVersion, AssemblyFileVersion, AssemblyInformationalVersion
+^\+?-?\s*\[assembly:\s*(AssemblyVersion|AssemblyFileVersion|AssemblyInformationalVersion)\s*\(
+
+# File version tags in .csproj files
+^\+?-?\s*<(FileVersion|AssemblyVersion|Version)>[\d\.]+</(FileVersion|AssemblyVersion|Version)>
+
+# ============================================================
+# Compiler-Generated Attributes (NOT security-related)
+# ============================================================
+
+# GeneratedCode attribute (various formats)
+^\+?-?\s*\[GeneratedCode\s*\(
+
+# CompilerGenerated attribute
+^\+?-?\s*\[CompilerGenerated\s*\]?
+
+# DebuggerNonUserCode attribute
+^\+?-?\s*\[DebuggerNonUserCode\s*\]?
+
+# DebuggerStepThrough attribute
+^\+?-?\s*\[DebuggerStepThrough\s*\]?
+
+# EditorBrowsable attribute
+^\+?-?\s*\[EditorBrowsable\s*\(
+
+# ============================================================
+# Build/Package Metadata (NOT security-related)
+# ============================================================
+
+# PackageProperty metadata
+^\+?-?\s*<PackageProperty\s+
+
+# Build timestamps
+^\+?-?\s*<BuildDate>
+
+# Copyright year changes (e.g., "© 2023" to "© 2024")
+^\+?-?\s*(\[assembly:\s*)?AssemblyCopyright.*©\s*\d{4}
+
+# Trademark statements
+^\+?-?\s*(\[assembly:\s*)?AssemblyTrademark
+
+# ============================================================
+# XML Namespace/Schema Noise (NOT security-related)
+# ============================================================
+
+# Xmlns declarations that only differ in formatting/order
+# NOTE: Be careful with this - namespace changes CAN be security-related
+# Uncomment if you're sure namespace changes are always noise in your context:
+# ^\+?-?\s*xmlns
+
+# ============================================================
+# Attribute Reordering Patterns
+# ============================================================
+# These patterns help detect when attributes are reordered but not changed
+# This is complex and handled specially in the filter script
+# DO NOT add generic attribute patterns here - they could hide security issues
+
+# ============================================================
+# EXAMPLES OF PATTERNS YOU SHOULD NOT ADD:
+# ============================================================
+# - Authentication/Authorization attributes (e.g., [Authorize], [AllowAnonymous])
+# - Security-related attributes (e.g., [ValidateAntiForgeryToken], [RequireHttps])
+# - Input validation attributes (e.g., [ValidateInput], [MaxLength])
+# - Any pattern matching method signatures or parameters
+# - Any pattern matching class names or namespaces
+# - SQL queries or connection strings
+# - Cryptographic operations
+# - File I/O or network operations

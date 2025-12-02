@@ -1,0 +1,482 @@
+[*] COVERAGE TEST: Comprehensive /_layouts/ Endpoint Enumeration
+[*] Testing ALL /_layouts/ endpoints with signout Referer bypass
+================================================================================
+
+### Category 1: Tool and Admin Pages
+
+[*] Test: Tool page: /_layouts/15/ToolPane.aspx?DisplayMode=Edit&foo=/ToolPane.aspx
+    Endpoint: /_layouts/15/ToolPane.aspx?DisplayMode=Edit&foo=/ToolPane.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Tool page: /_layouts/15/ToolPicker.aspx
+    Endpoint: /_layouts/15/ToolPicker.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Tool page: /_layouts/15/ToolPart.aspx
+    Endpoint: /_layouts/15/ToolPart.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Tool page: /_layouts/15/AdminRecycleBin.aspx
+    Endpoint: /_layouts/15/AdminRecycleBin.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Tool page: /_layouts/15/AdminTools.aspx
+    Endpoint: /_layouts/15/AdminTools.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Tool page: /_layouts/15/Settings.aspx
+    Endpoint: /_layouts/15/Settings.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Tool page: /_layouts/15/SiteSettings.aspx
+    Endpoint: /_layouts/15/SiteSettings.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Tool page: /_layouts/15/ManageFeatures.aspx
+    Endpoint: /_layouts/15/ManageFeatures.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Tool page: /_layouts/15/ListEdit.aspx
+    Endpoint: /_layouts/15/ListEdit.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Tool page: /_layouts/15/EditPrms.aspx
+    Endpoint: /_layouts/15/EditPrms.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Tool page: /_layouts/15/Role.aspx
+    Endpoint: /_layouts/15/Role.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Tool page: /_layouts/15/User.aspx
+    Endpoint: /_layouts/15/User.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Tool page: /_layouts/15/Groups.aspx
+    Endpoint: /_layouts/15/Groups.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+### Category 2: Web Part Pages
+
+[*] Test: WebPart page: /_layouts/15/WebPartAdder.aspx
+    Endpoint: /_layouts/15/WebPartAdder.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: WebPart page: /_layouts/15/WebPartGallery.aspx
+    Endpoint: /_layouts/15/WebPartGallery.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: WebPart page: /_layouts/15/StorMan.aspx
+    Endpoint: /_layouts/15/StorMan.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: WebPart page: /_layouts/15/EditWebPart.aspx
+    Endpoint: /_layouts/15/EditWebPart.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: WebPart page: /_layouts/15/WPPicker.aspx
+    Endpoint: /_layouts/15/WPPicker.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: WebPart page: /_layouts/15/AreaTemplateSettings.aspx
+    Endpoint: /_layouts/15/AreaTemplateSettings.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: WebPart page: /_layouts/15/AreaNavigationSettings.aspx
+    Endpoint: /_layouts/15/AreaNavigationSettings.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: WebPart page: /_layouts/15/AreaWelcomePage.aspx
+    Endpoint: /_layouts/15/AreaWelcomePage.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+### Category 3: Picker Pages
+
+[*] Test: Picker page: /_layouts/15/Picker.aspx
+    Endpoint: /_layouts/15/Picker.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Picker page: /_layouts/15/PickerDialog.aspx
+    Endpoint: /_layouts/15/PickerDialog.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Picker page: /_layouts/15/ItemPicker.aspx
+    Endpoint: /_layouts/15/ItemPicker.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Picker page: /_layouts/15/EntityPicker.aspx
+    Endpoint: /_layouts/15/EntityPicker.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Picker page: /_layouts/15/PeoplePicker.aspx
+    Endpoint: /_layouts/15/PeoplePicker.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+### Category 4: Form and Dialog Pages
+
+[*] Test: Form page: /_layouts/15/FormServer.aspx
+    Endpoint: /_layouts/15/FormServer.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Form page: /_layouts/15/FormServerAttachments.aspx
+    Endpoint: /_layouts/15/FormServerAttachments.aspx
+    Status: 405
+    [?] Unexpected: 405
+
+[*] Test: Form page: /_layouts/15/InfoPathForm.aspx
+    Endpoint: /_layouts/15/InfoPathForm.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Form page: /_layouts/15/DialogMaster.aspx
+    Endpoint: /_layouts/15/DialogMaster.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Form page: /_layouts/15/SimpleForm.aspx
+    Endpoint: /_layouts/15/SimpleForm.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Form page: /_layouts/15/FieldEdit.aspx
+    Endpoint: /_layouts/15/FieldEdit.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Form page: /_layouts/15/FldNew.aspx
+    Endpoint: /_layouts/15/FldNew.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+### Category 5: Upload and File Handler Pages
+
+[*] Test: Upload page: /_layouts/15/Upload.aspx
+    Endpoint: /_layouts/15/Upload.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Upload page: /_layouts/15/UploadEx.aspx
+    Endpoint: /_layouts/15/UploadEx.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Upload page: /_layouts/15/UploadMultiple.aspx
+    Endpoint: /_layouts/15/UploadMultiple.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Upload page: /_layouts/15/Download.aspx
+    Endpoint: /_layouts/15/Download.aspx
+    Status: 302
+    [~] Redirect to: http://10.10.10.166
+
+[*] Test: Upload page: /_layouts/15/AttachFile.aspx
+    Endpoint: /_layouts/15/AttachFile.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+### Category 6: View and List Pages
+
+[*] Test: View page: /_layouts/15/ViewType.aspx
+    Endpoint: /_layouts/15/ViewType.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: View page: /_layouts/15/ViewEdit.aspx
+    Endpoint: /_layouts/15/ViewEdit.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: View page: /_layouts/15/ViewNew.aspx
+    Endpoint: /_layouts/15/ViewNew.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: View page: /_layouts/15/ViewLsts.aspx
+    Endpoint: /_layouts/15/ViewLsts.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: View page: /_layouts/15/ListFeed.aspx
+    Endpoint: /_layouts/15/ListFeed.aspx
+    Status: 404
+    [-] 404 Not Found
+
+[*] Test: View page: /_layouts/15/NewForm.aspx
+    Endpoint: /_layouts/15/NewForm.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: View page: /_layouts/15/EditForm.aspx
+    Endpoint: /_layouts/15/EditForm.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: View page: /_layouts/15/DispForm.aspx
+    Endpoint: /_layouts/15/DispForm.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+### Category 7: Quick Links Pages
+
+[*] Test: QuickLinks page: /_layouts/15/quicklinks.aspx
+    Endpoint: /_layouts/15/quicklinks.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: QuickLinks page: /_layouts/15/quicklinksdialogform.aspx
+    Endpoint: /_layouts/15/quicklinksdialogform.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: QuickLinks page: /_layouts/15/QuickLinksDialog.aspx
+    Endpoint: /_layouts/15/QuickLinksDialog.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: QuickLinks page: /_layouts/15/ContactLinksSuggestionsMicroView.aspx
+    Endpoint: /_layouts/15/ContactLinksSuggestionsMicroView.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+### Category 8: Other Potentially Vulnerable Pages
+
+[*] Test: Other page: /_layouts/15/RedirectPage.aspx
+    Endpoint: /_layouts/15/RedirectPage.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+
+[*] Test: Other page: /_layouts/15/ActionRedirect.aspx
+    Endpoint: /_layouts/15/ActionRedirect.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Other page: /_layouts/15/ProfileRedirect.aspx
+    Endpoint: /_layouts/15/ProfileRedirect.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Other page: /_layouts/15/downloadexternaldata.aspx
+    Endpoint: /_layouts/15/downloadexternaldata.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Other page: /_layouts/15/MngSiteAdmin.aspx
+    Endpoint: /_layouts/15/MngSiteAdmin.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Other page: /_layouts/15/ManageContentType.aspx
+    Endpoint: /_layouts/15/ManageContentType.aspx
+    Status: 401
+    [-] 401 Unauthorized - Auth required
+
+[*] Test: Other page: /_layouts/15/listedit.aspx
+    Endpoint: /_layouts/15/listedit.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+[*] Test: Other page: /_layouts/15/CustomizePage.aspx
+    Endpoint: /_layouts/15/CustomizePage.aspx
+    Status: 200
+    [!] POTENTIAL BYPASS! 200 OK with content
+    Body sample: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head
+
+================================================================================
+[*] COVERAGE TEST COMPLETE
+[*] Total endpoints tested: 58
+[*] Potential bypasses found: 28
+
+[!] POTENTIAL BYPASS ROUTES IDENTIFIED:
+    - /_layouts/15/ToolPicker.aspx
+    - /_layouts/15/ToolPart.aspx
+    - /_layouts/15/AdminTools.aspx
+    - /_layouts/15/SiteSettings.aspx
+    - /_layouts/15/ListEdit.aspx
+    - /_layouts/15/WebPartAdder.aspx
+    - /_layouts/15/WebPartGallery.aspx
+    - /_layouts/15/EditWebPart.aspx
+    - /_layouts/15/WPPicker.aspx
+    - /_layouts/15/Picker.aspx
+    - /_layouts/15/PickerDialog.aspx
+    - /_layouts/15/ItemPicker.aspx
+    - /_layouts/15/EntityPicker.aspx
+    - /_layouts/15/PeoplePicker.aspx
+    - /_layouts/15/InfoPathForm.aspx
+    - /_layouts/15/DialogMaster.aspx
+    - /_layouts/15/SimpleForm.aspx
+    - /_layouts/15/FieldEdit.aspx
+    - /_layouts/15/UploadMultiple.aspx
+    - /_layouts/15/NewForm.aspx
+    - /_layouts/15/EditForm.aspx
+    - /_layouts/15/DispForm.aspx
+    - /_layouts/15/quicklinksdialogform.aspx
+    - /_layouts/15/QuickLinksDialog.aspx
+    - /_layouts/15/ContactLinksSuggestionsMicroView.aspx
+    - /_layouts/15/RedirectPage.aspx
+    - /_layouts/15/listedit.aspx
+    - /_layouts/15/CustomizePage.aspx
+
+[!] These endpoints returned 200 OK with signout Referer - requires manual verification

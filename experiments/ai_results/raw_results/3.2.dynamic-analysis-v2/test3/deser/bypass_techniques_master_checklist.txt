@@ -1,0 +1,97 @@
+HISTORICAL BYPASS TECHNIQUES MASTER CHECKLIST
+==============================================
+
+DESERIALIZATION-SPECIFIC TECHNIQUES FROM SUMMARY.MD:
+
+1. [ ] DataSet.ReadXml() via __SUGGESTIONSCACHE__ parameter
+   - Source: summary.md CVE-2020-1147
+   - Entry: /_layouts/15/quicklinks.aspx?Mode=Suggestion
+   - Status: TESTED - 401 UNAUTHORIZED (different CVE, requires auth)
+
+2. [ ] ExpandedWrapper + LosFormatter.Deserialize gadget
+   - Source: summary.md CVE-2020-1147
+   - Mechanism: Load two types simultaneously
+   - Status: NOT TESTED for ExcelDataSet
+
+3. [ ] msdata:DataType schema overwrite
+   - Source: summary.md CVE-2020-1147
+   - Mechanism: Overwrite DataSet schema at deserialization time
+   - Status: NOT TESTED for ExcelDataSet
+
+4. [ ] BinaryFormatter via State Service
+   - Source: summary.md CVE-2022-29108
+   - Entry: ChartAdminPageBase.get_currentWorkingSet()
+   - Status: NOT TESTED (different vulnerability path)
+
+5. [ ] HTML entity encoding of runat attribute
+   - Source: summary.md CVE-2021-28474
+   - Example: runat="&#115;erver" instead of runat="server"
+   - Status: NOT TESTED
+
+6. [ ] Trailing space in Namespace attribute (not TypeName)
+   - Source: summary.md CVE-2021-31181
+   - Example: Namespace="Microsoft.PerformancePoint.Scorecards "
+   - Status: NOT TESTED (I only tested trailing space in control name)
+
+7. [ ] Trailing space in control name
+   - Source: CVE-2021-31181 pattern applied
+   - Example: <ScorecardClient:ExcelDataSet  ...>
+   - Status: TESTED - 401 UNAUTHORIZED (BLOCKED)
+
+8. [ ] TypeConverter mechanism
+   - Source: summary.md CVE-2020-0932
+   - Mechanism: ResXFileRef TypeConverter
+   - Status: NOT APPLICABLE (different vulnerability)
+
+9. [ ] BDC DynamicType deserialization
+   - Source: summary.md CVE-2019-1257
+   - Mechanism: Microsoft.BusinessData.Runtime.DynamicType
+   - Status: NOT APPLICABLE (requires admin upload)
+
+10. [ ] XmlSerializer with attacker-controlled type
+    - Source: summary.md CVE-2019-0604
+    - Entry: /_layouts/15/Picker.aspx
+    - Status: NOT APPLICABLE (different entry point)
+
+11. [ ] ObjectDataProvider gadget
+    - Source: summary.md (multiple CVEs)
+    - Mechanism: Invoke arbitrary methods via reflection
+    - Status: NOT TESTED as gadget payload variant
+
+12. [ ] YamlDotNet deserialization
+    - Source: summary.md ndss21.pdf
+    - Status: NOT APPLICABLE (Azure DevOps, not SharePoint)
+
+ENCODING/PARSING BYPASSES:
+
+13. [ ] URL encoding variations in CompressedDataTable
+    - Status: NOT TESTED
+
+14. [ ] Base64 payload variations
+    - Status: NOT TESTED
+
+15. [ ] Gzip compression manipulation
+    - Status: NOT TESTED
+
+ALTERNATIVE TYPES FROM HISTORICAL RESEARCH:
+
+16. [ ] System.Data.DataTable (direct)
+    - Source: summary.md CVE-2020-1147
+    - Status: NOT TESTED
+
+17. [ ] System.Data.DataView
+    - Source: summary.md CVE-2020-1147
+    - Status: NOT TESTED
+
+18. [ ] System.Data.DataSet (direct)
+    - Source: summary.md CVE-2020-1147
+    - Status: NOT TESTED
+
+19. [ ] Alternative PerformancePoint.Scorecards types
+    - Status: NEED TO CHECK decompiled assemblies
+
+UNTESTED TECHNIQUES REQUIRING IMMEDIATE TESTING:
+- HTML entity encoding (HIGH PRIORITY)
+- Trailing space in Namespace attribute (HIGH PRIORITY)
+- msdata:DataType schema manipulation (MEDIUM PRIORITY)
+- Alternative dangerous types in configs (MEDIUM PRIORITY)

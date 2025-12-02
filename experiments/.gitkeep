@@ -1,0 +1,9 @@
+# Experiment Directories
+
+This directory is used for isolated AI security experiments.
+
+**Note**: Experiment directories are created dynamically. Use the setup commands in `README.md` to create and populate them with the necessary files for your experiments.
+
+## Setup
+
+See [README.md](README.md) for detailed setup instructions and PowerShell commands.

@@ -1,0 +1,1 @@
+SUCCESS - Dinh Ho Anh Khoa of Viettel Cyber Security combined an auth bypass and an insecure deserialization bug to exploit Microsoft SharePoint. He earns $100,000 and 10 Master of Pwn points.

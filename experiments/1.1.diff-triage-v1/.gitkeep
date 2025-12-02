@@ -1,0 +1,3 @@
+# Placeholder to preserve experiment directory structure
+# Actual experiment files are excluded via .gitignore (copyrighted snapshots/diffs)
+# Use setup commands in ../README.md to populate this directory

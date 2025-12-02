@@ -1,0 +1,2 @@
+# Placeholder to preserve artifacts directory structure
+# Actual artifacts are excluded via .gitignore (hash databases, change lists)
