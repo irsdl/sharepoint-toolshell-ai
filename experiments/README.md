@@ -60,7 +60,7 @@ Each experiment is isolated with its own directory, specific materials, and cons
 
 1. **Copy experiment to isolated location** (outside this repository):
    ```powershell
-   Copy-Item "experiments\1.1.diff-triage-v1" -Destination "C:\isolated-experiments\run-001" -Recurse
+   Copy-Item "experiments\1.1.diff-triage" -Destination "C:\isolated-experiments\run-001" -Recurse
    cd C:\isolated-experiments\run-001
    ```
 
@@ -160,7 +160,7 @@ Can AI discover vulnerabilities by analyzing patch diffs between original and pa
 
 ```powershell
 # Create experiment directory
-$ExpDir = "experiments\1.1.diff-triage-v1"
+$ExpDir = "experiments\1.1.diff-triage"
 New-Item -ItemType Directory -Path $ExpDir -Force
 
 # Copy v1 normalized files
@@ -197,7 +197,7 @@ Write-Host "Diff-Driven Triage (Variant 1) experiment setup complete at: $ExpDir
 ##### Folder Structure
 
 ```
-experiments/1.1.diff-triage-v1/
+experiments/1.1.diff-triage/
 ├── agent.md                    # Experiment constraints and folder structure
 ├── prompt/                     # Experiment prompts (copied from experiments/prompts/1.diff-triage/variant-1/)
 ├── snapshots_norm/
@@ -219,7 +219,7 @@ experiments/1.1.diff-triage-v1/
 
 ```powershell
 # Create experiment directory
-$ExpDir = "experiments\1.2.diff-triage-v2"
+$ExpDir = "experiments\1.2.diff-triage"
 New-Item -ItemType Directory -Path $ExpDir -Force
 
 # Copy v1 normalized files
@@ -260,7 +260,7 @@ Write-Host "Diff-Driven Triage (Variant 2) experiment setup complete at: $ExpDir
 ##### Folder Structure
 
 ```
-experiments/1.2.diff-triage-v2/
+experiments/1.2.diff-triage/
 ├── agent.md                    # Experiment constraints and folder structure
 ├── prompt/                     # Experiment prompts (copied from experiments/prompts/1.diff-triage/variant-2/)
 ├── snapshots_norm/
@@ -289,7 +289,7 @@ experiments/1.2.diff-triage-v2/
 
 ```powershell
 # Create experiment directory
-$ExpDir = "experiments\1.3.diff-triage-v3"
+$ExpDir = "experiments\1.3.diff-triage"
 New-Item -ItemType Directory -Path $ExpDir -Force
 
 # Copy v1 normalized files
@@ -345,7 +345,7 @@ Write-Host "Diff-Driven Triage (Variant 3) experiment setup complete at: $ExpDir
 ##### Folder Structure
 
 ```
-experiments/1.3.diff-triage-v3/
+experiments/1.3.diff-triage/
 ├── agent.md                    # Experiment constraints and folder structure
 ├── prompt/                     # Experiment prompts (copied from experiments/prompts/1.diff-triage/variant-3/)
 ├── snapshots_norm/
@@ -487,7 +487,7 @@ Provide AI with a working exploit and patched code—can it identify new bypasse
 
 ```powershell
 # Create experiment directory
-$ExpDir = "experiments\3.1.dynamic-analysis-v1"
+$ExpDir = "experiments\3.1.dynamic-analysis"
 New-Item -ItemType Directory -Path $ExpDir -Force
 
 # Copy v1 normalized files
@@ -537,7 +537,7 @@ Write-Host "Dynamic Analysis (Variant 1) experiment setup complete at: $ExpDir"
 ##### Folder Structure
 
 ```
-experiments/3.1.dynamic-analysis-v1/
+experiments/3.1.dynamic-analysis/
 ├── agent.md                    # Experiment constraints and folder structure
 ├── prompt/                     # Experiment prompts (copied from experiments/prompts/3.dynamic-analysis/variant-1/)
 ├── diff_reports/               # Patch diffs (v1 to v2)
@@ -563,7 +563,7 @@ experiments/3.1.dynamic-analysis-v1/
 
 ```powershell
 # Create experiment directory
-$ExpDir = "experiments\3.2.dynamic-analysis-v2"
+$ExpDir = "experiments\3.2.dynamic-analysis"
 New-Item -ItemType Directory -Path $ExpDir -Force
 
 # Copy v1 normalized files
@@ -620,7 +620,7 @@ Write-Host "Dynamic Analysis (Variant 2) experiment setup complete at: $ExpDir"
 ##### Folder Structure
 
 ```
-experiments/3.2.dynamic-analysis-v2/
+experiments/3.2.dynamic-analysis/
 ├── agent.md                    # Experiment constraints and folder structure
 ├── prompt/                     # Experiment prompts (copied from experiments/prompts/3.dynamic-analysis/variant-2/)
 ├── diff_reports/               # Patch diffs (v1 to v2)

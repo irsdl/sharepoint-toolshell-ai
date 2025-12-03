@@ -85,12 +85,12 @@ sp-toolshell-ai-research/
 │   │   ├── 1.diff-triage/
 │   │   ├── 2.static-analysis/
 │   │   └── 3.dynamic-analysis/
-│   ├── 1.1.diff-triage-v1/         # Populated by setup commands (excluded from git)
-│   ├── 1.2.diff-triage-v2/         # Populated by setup commands (excluded from git)
-│   ├── 1.3.diff-triage-v3/         # Populated by setup commands (excluded from git)
+│   ├── 1.1.diff-triage/            # Populated by setup commands (excluded from git)
+│   ├── 1.2.diff-triage/            # Populated by setup commands (excluded from git)
+│   ├── 1.3.diff-triage/            # Populated by setup commands (excluded from git)
 │   ├── 2.1.static-analysis/        # Populated by setup commands (excluded from git)
-│   ├── 3.1.dynamic-analysis-v1/    # Populated by setup commands (excluded from git)
-│   ├── 3.2.dynamic-analysis-v2/    # Populated by setup commands (excluded from git)
+│   ├── 3.1.dynamic-analysis/       # Populated by setup commands (excluded from git)
+│   ├── 3.2.dynamic-analysis/       # Populated by setup commands (excluded from git)
 │   └── ai_results/             🤖 AI experiment outputs
 │
 ├── tools/                      🛠️ Automation pipeline
