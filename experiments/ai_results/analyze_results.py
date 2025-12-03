@@ -14,14 +14,14 @@ def extract_experiment_info(file_path: str) -> Tuple[str, str]:
     Extract experiment name and number from file path.
 
     Examples:
-    - experiments/ai_results/raw_results/1.1.diff-triage-v1/claude-sonnet/test1/
-      -> Experiment: 1.1.diff-triage-v1, Number: 1
-    - experiments/ai_results/raw_results/1.1.diff-triage-v1/codex/test5-v2/
-      -> Experiment: 1.1.diff-triage-v1, Number: 1-v2
+    - experiments/ai_results/raw_results/1.1.diff-triage/claude-sonnet/test1/
+      -> Experiment: 1.1.diff-triage, Number: 1
+    - experiments/ai_results/raw_results/1.1.diff-triage/codex/test5-v2/
+      -> Experiment: 1.1.diff-triage, Number: 1-v2
     """
     parts = file_path.split(os.sep)
 
-    # Find experiment name (e.g., "1.1.diff-triage-v1")
+    # Find experiment name (e.g., "1.1.diff-triage")
     experiment = ""
     for part in parts:
         if re.match(r'^\d+\.\d+\.', part):  # Matches pattern like "1.1."
