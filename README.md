@@ -4,6 +4,8 @@
 
 **Presentation:** NDC Manchester Conference - "ToolShell Patch Bypass and the AI That Might Have Seen It Coming"
 
+**Slides:** [ToolShell-Patch-Bypass-and-the-AI-That-Might-Have-Seen-It-Coming.pdf](ToolShell-Patch-Bypass-and-the-AI-That-Might-Have-Seen-It-Coming.pdf)
+
 ## Overview
 
 This repository supports a controlled experiment comparing AI models' ability to:
